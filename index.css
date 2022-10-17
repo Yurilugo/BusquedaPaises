@@ -1,0 +1,66 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+h1, p{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    gap: 0,5rem;
+
+}
+
+body{
+    background-color: black;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+#container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+
+#imput-Busqueda{
+    display: flex;
+    background-color: rgba(180, 176, 176, 0.712);
+    gap: 1rem;
+    width: 100%;
+    height: 5vh;
+    border-radius: 0.5rem;
+}
+
+img{
+    width: 20%;
+}
+
+#info-Busqueda{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
